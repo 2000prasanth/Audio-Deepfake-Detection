@@ -57,7 +57,7 @@ def prepare_single_data(features, max_len=500):
     return features
 
 # Load the saved TensorFlow Lite model
-interpreter = tf.lite.Interpreter(model_path=r"C:\Users\prasa\OneDrive\Desktop\CUSAT_project\ML model training_rms_zcr\model_breath_logspec_mfcc_cnn.tflite")
+interpreter = tf.lite.Interpreter(model_path=r"model_breath_logspec_mfcc_cnn.tflite")
 interpreter.allocate_tensors()
 
 # Get input and output details
